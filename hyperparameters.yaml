@@ -1,0 +1,21 @@
+# lstm:
+#   hidden_size: [50, 100]
+#   dropout: [0.2, 0.3]
+#   epochs: [50, 100]
+#   learning_rate: [0.001, 0.0005]
+# gru:
+#   hidden_size: [64, 128]
+#   dropout: [0.3, 0.4]
+#   epochs: [30, 50]
+#   learning_rate: [0.002, 0.001]
+
+lstm:
+  hidden_size: [50]
+  dropout: [0.2]
+  epochs: [10]
+  learning_rate: [0.001]
+gru:
+  hidden_size: [64]
+  dropout: [0.4]
+  epochs: [15]
+  learning_rate: [0.002]

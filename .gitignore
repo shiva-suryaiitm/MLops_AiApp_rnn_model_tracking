@@ -1,0 +1,11 @@
+# Ignore DVC data and models
+data/
+models/
+
+# Ignore MLflow runs
+mlruns/
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.swp

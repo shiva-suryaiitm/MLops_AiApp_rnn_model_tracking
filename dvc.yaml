@@ -1,0 +1,18 @@
+stages:
+  export_data:
+    cmd: python3 export_data.py
+    deps:
+      - export_data.py
+    outs:
+      - data/prices.json
+      - data/volumes.json
+  train_models:
+    cmd: python3 train_models.py
+    deps:
+      - train_models.py
+      - data/prices.json
+      - data/volumes.json
+      - hyperparameters.yaml
+    outs:
+      - models/price_model.pth
+      - models/volume_model.pth
